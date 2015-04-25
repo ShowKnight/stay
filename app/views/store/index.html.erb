@@ -1,0 +1,12 @@
+<h1>Store#index</h1>
+<p>Find me in app/views/store/index.html.erb</p>
+
+<% if notice %>
+<p id="notice"><%= notice %></p>
+<% end %>
+
+<h1>Your Pragmatic Catalog</h1>
+
+<% @products.each do |product| %>
+    <h3><%= product.price %><h3>
+<% end %>
